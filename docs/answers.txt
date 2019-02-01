@@ -1,0 +1,60 @@
+(a) Paste the console output you saved a t the end of step 3.C (2 points)
+
+C:\Users\Emilio\Assignment1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\Emilio\Assignment1>git add *
+
+C:\Users\Emilio\Assignment1>git commit -m "Added status to status.txt"
+[master 994deb1] Added status to status.txt
+ 1 file changed, 5 insertions(+)
+
+C:\Users\Emilio\Assignment1>git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 427 bytes | 427.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Murillians/Assignment1.git
+   fafdc8c..994deb1  master -> master
+
+
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information (4 points)
+5, git log-pretty=oneline
+
+(c) When was the .gitignore file modified last? Write the git command you used
+to get this information (4 points)
+the .gitignore file was last modified 1/10/19 (commit 69281a35557fd1226cbfc11428068c5d8bcf8466)
+I used git log .gitignore to see this
+
+(d) Mention two reasons why branches are used in a Git repository (4 points)
+
+A branch can let you have a "Stable" release branch that has only bug fixes/stable releases and a 
+dev release that lets you implement new features and play with them
+
+keeping a clean master branch can also let other people start programming on an project
+ and not need to worry about new changes made on a different branch
+
+(e) What is the difference between git log and git status? (4 points)
+git log shows you all previous commits to a repo while git status shows current status
+(if you're up to date on your branch, changes not committed) 
+
+(f) What command would you use to see the commits where “Weapon.h” was one
+of the committed files? (4 points)
+git log --follow Weapon.h
+(g) What command would you use to see the commits whose commit message
+contains the word “file”? (4 points)
+git log --grep="file"
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II)
+What is polymorphism? (III) What is encapsulation? (6 points)
+
+I.Inheritance is when a class derives/extends another class and as a result inherits the traits(methods/variables/etc.) of the class it extends
+II. Polymorphism allows us to support the same methods gained through inheritance through different means.
+ex. a car class might have a weight method but a semi truck that derives that might have a weight method that factors if it has a trailer or not
+III. Encapsulation is used to control user/derived class access to class data.
