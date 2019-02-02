@@ -5,7 +5,7 @@
 #include "SimpleHammer.h"
 
 double SimpleHammer::hit(double armor) {
-    double damage=hitPoints-armor;
+    double damage=armor-hitPoints;
     if(armor<30){damage=hitPoints;}
     if (damage<0){return 0;}
     return damage;

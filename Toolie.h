@@ -6,12 +6,14 @@
 #define TOOLIE_H
 
 #include <string>
+#include <iostream>
 #include "Weapon.h"
+#include <random>
 
 class Toolie: public Weapon {
 public:
-    Toolie():Weapon("Toolie",42){};
-    virtual ~Toolie();
+    Toolie():Weapon("Toolie",30){};
+    virtual ~Toolie(){};
     virtual double hit(double armor);
 };
 

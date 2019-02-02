@@ -43,7 +43,16 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon,armor);
     delete(weapon);
 
+    armor=35;//to test simple hammer
+    weapon=WeaponFactory::getInstance()->getWeapon("hammer");
+    simulateWeapon(weapon,armor);
+    delete(weapon);
+
     weapon=WeaponFactory::getInstance()->getWeapon("crazysword");
+    simulateWeapon(weapon,armor);
+    delete(weapon);
+
+    weapon=WeaponFactory::getInstance()->getWeapon("toolie");
     simulateWeapon(weapon,armor);
     delete(weapon);
 
