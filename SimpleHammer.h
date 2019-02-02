@@ -8,8 +8,9 @@
 
 
 class SimpleHammer: public Weapon {
-    SimpleHammer():Weapon("Simple Hammer",25){};
-    virtual ~SimpleHammer();
+public:
+    SimpleHammer():Weapon("Simple Hammer",25.0){};
+    virtual ~SimpleHammer(){};
     virtual double hit(double armor);
 };
 
