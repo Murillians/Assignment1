@@ -54,9 +54,11 @@ git log --grep="file"
 (h) In the context of object-oriented programming (I) What is inheritance? (II)
 What is polymorphism? (III) What is encapsulation? (6 points)
 
-I.Inheritance is when a class derives/extends another class and as a result inherits the traits(methods/variables/etc.) of the class it extends
+I.Inheritance is when a class derives/extends another class and as a result inherits the traits(methods/variables/etc.)
+of the class it extends
 II. Polymorphism allows us to support the same methods gained through inheritance through different means.
-ex. a car class might have a weight method but a semi truck that derives that might have a weight method that factors if it has a trailer or not
+ex. a car class might have a weight method but a semi truck that derives that might have a weight method that factors if
+it has a trailer or not
 III. Encapsulation is used to control user/derived class access to class data.
 
 
@@ -67,5 +69,14 @@ The main difference is the last of individual developer's own repos in the D&L m
 (j) Why a team of 100 developers would benefit more by following the “Dictator
 and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
 
-the additional layers of managment (Lieutenants and Dictator) puts more eyes on code and can help improve code quality
-it will also help keep main repo cleaner
+The additional layers of management (Lieutenants and Dictator) puts more eyes on code and can help improve code quality.
+It will also help keep main repo cleaner
+
+Is the RoleGame prototype using polymorphism and/or encapsulation? If you find that the
+prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+
+The RoleGame is using both polymorphism and encapsulation.
+Every weapon is derived from the "Weapon" class which is polymorphism
+This weapon class has a "getname" function which returns the weapon's name. By obscuring the name
+behind this function call, the weapon class is employing encapsulation
